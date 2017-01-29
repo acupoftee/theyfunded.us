@@ -4,7 +4,43 @@
     <meta charset="utf-8">
     <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
     <title>Save the Arts</title>
-    <scripts src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|PT+Serif" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.min.js"></script>
+    <script src="sketch.js"></script>
+    <style type="text/css">
+      body {
+        font-family: "Montserrat";
+        margin: 0;
+      }
+      a {
+        color: white;
+      }
+      h1 {
+        margin-top: 0;
+        border-bottom: 5px dotted #ccc;
+        padding-bottom: 20px;
+      }
+      #items {
+        font-size: 30px;
+      }
+      #main {
+        padding: 20px;
+      }
+      #main2 {
+        font-family: "Montserrat";
+        color: black;
+        font-size: 80px;
+      }
+      #header {
+        font-family: "Montserrat";
+        font-size: 12px;
+        color: white;
+        padding: 7px;
+        padding-left: 20px;
+        line-height: 20px;
+        background-color: #8A2BE2;
+      }
+    </style>
   </head>
   <body>
     <div id="header">
@@ -17,6 +53,9 @@
       The NEA supports all art practices " + <a href="http://hackingforartists.com/">(like ALL of these).</a>
       "To support the NEA and save public funding for the arts in the USA, "
       <a href="http://www.house.gov/representatives/find/">call your local representative.</a>
-      <div id="items"></div>
+      <div id="list">
+        <h1>In 2016, the National Endowment for the Arts supported:</h1>
+        <div id="items"></div>
+      </div>
   </body>
 </html>
