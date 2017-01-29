@@ -13,11 +13,13 @@ function prepList() {
   document.body.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
 }
 
+// p5.js setup code
 function setup() {
   getLines();
   noCanvas();
 }
 
+// p5.js drawing code
 function draw() {}
 
 function shuffle(array) {
@@ -37,6 +39,7 @@ function shuffle(array) {
   return array;
 }
 
+// look through the spreadsheets feed for list items
 function getLines() {
   for (var i = 0; i < data.feed.entry.length; i++) {
     n = data.feed.entry.length;
@@ -48,6 +51,7 @@ function getLines() {
   emitEntries();
 }
 
+// shove it in their faces with splashes of color
 function emitEntries() {
   setInterval(function() {
     r1 = int(random(255));
