@@ -61,5 +61,5 @@ function start() {
         items.insertBefore(p, items.firstChild);
         l++;
         if (l > entries.length - 1) l = 0;
-    }, 1200);
+    }, 1400);
 }
